@@ -3,10 +3,8 @@ import imaplib
 import email
 import xml.etree.ElementTree as ET
 import requests
-from dotenv import load_dotenv
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import decode_header
-import shutil
 from collections import defaultdict
