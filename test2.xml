@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locations>
+    <Location>
+        <Name>Alma №3</Name>
+        <Latitude>48.440161</Latitude>
+        <Longitude>22.717045</Longitude>
+    </Location>
+    <Location>
+        <Name>Alma №2</Name>
+        <Latitude>48.454793</Latitude>
+        <Longitude>22.718921</Longitude>
+    </Location>
+    <Location>
+        <Name>Alma №1</Name>
+        <Latitude>48.454465</Latitude>
+        <Longitude>22.707712</Longitude>
+    </Location>
+</Locations>
