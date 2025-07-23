@@ -1,0 +1,10 @@
+import os
+import imaplib
+import email
+import xml.etree.ElementTree as ET
+import requests
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.header import decode_header
+from collections import defaultdict

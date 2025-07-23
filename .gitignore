@@ -1,0 +1,7 @@
+__pycache__/
+.env
+the_shortest_way.ipynb
+part.py
+requirements.txt
+test.xml
+test2.xml
