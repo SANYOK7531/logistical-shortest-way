@@ -32,10 +32,10 @@ for (sender, subject), xml_files in grouped.items():
             body += "📊 Відстані між точками:\n\n" + full_table + "\n\n"
             body += f"🧭 Маршрут №{i}: {os.path.basename(xml_file)}\n\n"
 
-            body += f"{'Точка':<25} {'Відстань':<12} {'Час в дорозі'}\n"
+            body += f"{'Точка':<40} | {'Відстань':<12} | {'Час в дорозі'}\n"
             body += "-" * 55 + "\n"
             for name, distance, duration in route_info:
-                body += f"{name:<25} {distance:<12} {duration}\n"
+                body += f"{name:<40} | {distance:<12} | {duration}\n"
 
             body += f"\n🗺️ Візуалізувати маршрут: {maps_url}\n"
 
