@@ -60,13 +60,28 @@ def fetch_xml_from_mail():
 
     return results
 
+# def parse_xml(filepath):
+#     tree = ET.parse(filepath)
+#     root = tree.getroot()
+#     locations = []
+
+#     for loc in root.findall("Location"):
+#         name = loc.find("Name").text
+#         lat  = float(loc.find("Latitude").text)
+#         lon  = float(loc.find("Longitude").text)
+#         locations.append((name, lat, lon))
+
+#     return locations
+
 def parse_xml(filepath):
     tree = ET.parse(filepath)
     root = tree.getroot()
     locations = []
 
-    for loc in root.findall("Location"):
-        name = loc.find("Name").text
+    adresses = root.find("Adresses")
+
+    for loc in adresses.findall("ROW"):
+        name = loc.find("Cleint").text
         lat  = float(loc.find("Latitude").text)
         lon  = float(loc.find("Longitude").text)
         locations.append((name, lat, lon))
